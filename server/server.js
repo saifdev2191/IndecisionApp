@@ -7,6 +7,8 @@ const app = express();
 //loading path
 const path = require('path')
 
+//creating port variable for heroku
+const port = process.env.PORT || 3000;
 
 //we need to tell express where our app lives and serve that up
 const publicPath = path.join(__dirname, '..','public');
@@ -19,6 +21,6 @@ app.get('*', (req, res) => {
 })
 
 //start up the server
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log('server is up !!')
 })
