@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "serve": "live-server public",
     "build:dev": "webpack --watch",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server"
@@ -16,6 +17,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^3.5.1",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "live-server": "^1.2.1",
     "node-sass": "^4.13.1",
@@ -23,6 +25,7 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-modal": "^3.11.2",
+    "react-router-dom": "^5.1.2",
     "sass-loader": "^7.3.1",
     "style-loader": "^1.1.3",
     "thread-loader": "^2.1.3",
